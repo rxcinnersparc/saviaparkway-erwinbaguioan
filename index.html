@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Savia Parkway</title>
+
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1J1iegBO0jKB7PhOdQBs7WmH5Z6ez8Xpz">
+  <link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/d/1J1iegBO0jKB7PhOdQBs7WmH5Z6ez8Xpz">
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1J1iegBO0jKB7PhOdQBs7WmH5Z6ez8Xpz">
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="preconnect" href="https://script.googleusercontent.com">
+
   <style>
     html,
     body {
@@ -30,14 +37,25 @@
 </head>
 <body>
   <iframe
+    id="app"
     src="https://script.google.com/macros/s/AKfycbxyFpRD80GKbAqftVvChXE4uu1FcWry-Zk9v48PxBb9ZFv_CnVmCtBfVUQYyTkrBJDK/exec"
     title="Savia Parkway"
     loading="eager"
     referrerpolicy="no-referrer-when-downgrade"
     allow="clipboard-write; fullscreen"
   ></iframe>
+
   <noscript>
     <a href="https://script.google.com/macros/s/AKfycbxyFpRD80GKbAqftVvChXE4uu1FcWry-Zk9v48PxBb9ZFv_CnVmCtBfVUQYyTkrBJDK/exec">Open Savia Parkway</a>
   </noscript>
+
+  <script>
+    (function () {
+      var appUrl = 'https://script.google.com/macros/s/AKfycbxyFpRD80GKbAqftVvChXE4uu1FcWry-Zk9v48PxBb9ZFv_CnVmCtBfVUQYyTkrBJDK/exec';
+      var params = window.location.search || '';
+      var hash = window.location.hash ? (params ? '&' : '?') + 'hash=' + encodeURIComponent(window.location.hash.slice(1)) : '';
+      if (params || hash) document.getElementById('app').src = appUrl + params + hash;
+    }());
+  </script>
 </body>
 </html>
