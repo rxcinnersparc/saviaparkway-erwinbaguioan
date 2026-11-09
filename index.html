@@ -61,7 +61,7 @@
 
   <script>
     (function () {
-      var appUrl = 'https://script.google.com/macros/s/AKfycbxyFpRD80GKbAqftVvChXE4uu1FcWry-Zk9v48PxBb9ZFv_CnVmCtBfVUQYyTkrBJDK/exec';
+      var appUrl = 'https://script.google.com/macros/s/AKfycbyoT49eD3d5IsseLKKV3qki7YylpbN6FtwAvMyXm35qgWn7eF9KYCOSuuckt-oBHYAg/exec';
       var params = window.location.search || '';
       var hash = window.location.hash ? (params ? '&' : '?') + 'hash=' + encodeURIComponent(window.location.hash.slice(1)) : '';
       if (params || hash) document.getElementById('app').src = appUrl + params + hash;
